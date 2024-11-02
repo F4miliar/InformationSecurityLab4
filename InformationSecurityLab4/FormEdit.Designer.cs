@@ -156,7 +156,7 @@
             // 
             this.numericUpDownAccessPick.Location = new System.Drawing.Point(13, 314);
             this.numericUpDownAccessPick.Maximum = new decimal(new int[] {
-            2,
+            3,
             0,
             0,
             0});
@@ -170,7 +170,7 @@
             this.buttonAccessAdd.Name = "buttonAccessAdd";
             this.buttonAccessAdd.Size = new System.Drawing.Size(167, 23);
             this.buttonAccessAdd.TabIndex = 12;
-            this.buttonAccessAdd.Text = "Добавить права";
+            this.buttonAccessAdd.Text = "Изменить права";
             this.buttonAccessAdd.UseVisualStyleBackColor = true;
             this.buttonAccessAdd.Click += new System.EventHandler(this.buttonAccessAdd_Click);
             // 
@@ -185,6 +185,7 @@
             this.dataGridViewUsersPrivilages.RowHeadersWidth = 51;
             this.dataGridViewUsersPrivilages.Size = new System.Drawing.Size(225, 59);
             this.dataGridViewUsersPrivilages.TabIndex = 13;
+            this.dataGridViewUsersPrivilages.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsersPrivilages_CellClick);
             // 
             // dataGridViewObjectPrivilages
             // 
@@ -197,6 +198,7 @@
             this.dataGridViewObjectPrivilages.RowHeadersWidth = 51;
             this.dataGridViewObjectPrivilages.Size = new System.Drawing.Size(225, 59);
             this.dataGridViewObjectPrivilages.TabIndex = 14;
+            this.dataGridViewObjectPrivilages.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewObjectPrivilages_CellClick);
             // 
             // FormEdit
             // 

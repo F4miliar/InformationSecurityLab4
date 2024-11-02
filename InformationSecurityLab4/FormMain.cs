@@ -27,6 +27,7 @@ namespace InformationSecurityLab4
             InitializeComponent();
             MatrixInit();
             UIElementsUpdate();
+            comboBoxUserPick.SelectedIndex = 0;
         }
 
         private void MatrixInit()
@@ -55,7 +56,6 @@ namespace InformationSecurityLab4
                 comboBoxUserPick.Items.Add(user);
             foreach (Text text in _objects)
                 listBoxObject.Items.Add(text.GetName());
-            comboBoxUserPick.SelectedIndex = 0;
         }
 
         private void UpdateText()
@@ -130,6 +130,8 @@ namespace InformationSecurityLab4
             formEdit.ShowDialog(this);
             UpdateLists(formEdit);
             UIElementsUpdate();
+            comboBoxUserPick.SelectedIndex = pickedUser = 0;
+            listBoxObject.SelectedIndex = pickedObject = 0;
         }
 
         private void UpdateLists(FormEdit formEdit)
